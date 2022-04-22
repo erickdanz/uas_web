@@ -1,0 +1,50 @@
+Entitas dan Atribut:
+=====================
+- Users 
+Id (PK)
+Username
+Password
+FirstName
+LastName
+Email
+Gender
+PhoneNumber
+Tanggal
+Bulan
+Tahun
+Role (enum [Admin/User])
+
+- Lokasi
+ID (PK)
+NamaLokasi 
+Wilayah
+
+- Studio
+ID (PK)
+IDLokasi (FK)
+StudioNo
+PatternKursi
+
+- Film
+ID (PK)
+NamaFilm 
+DescFilm
+Sutradara
+Aktor
+TanggalRilis
+
+- JadwalPenayangan
+ID (PK)
+IDStudio (FK)
+IDFilm (FK)
+JamPenayangan
+TiketTerbeli
+TiketTersedia
+HargaTiket
+KursiTerbeli
+
+- Pembelian
+ID (PK)
+IDUser (FK)
+IDPenayangan (FK)
+JlhTiket
